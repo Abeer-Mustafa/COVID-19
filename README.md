@@ -4,6 +4,9 @@ Website template that introduce some information about coronavirus (COVID-19).
 
 it provides preventive advice and allows you to search for health centers and quarantine centers in Syria.
 
+## Utilized
+HTML5, CSS3, JavaScript, Bootstarp
+
 ## By Abeer Mustafa
 ![COVID-19](screenshots/home.png)
 #
