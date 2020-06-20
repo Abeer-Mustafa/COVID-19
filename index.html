@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>COVID-19-SYR</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Maps | leaflet -->
+  <link 
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""
+  />
+  <script
+    src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin="">
+  </script>
+</head>
+
+<body  style="direction: rtl;">
+
+  <!--==========================
+    Header
+  ============================-->
+  <header id="header">
+    <div class="container-fluid">
+      <div id="logo" class="pull-left">
+        <h2><a href="#intro" class="scrollto">COVID-19-SYR</a></h2>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+         
+          <li><a href="#call-to-action">حول الموقع</a></li>
+          <li><a href="#contact">تسجيل حالة</a></li>
+          <li><a href="#Quarantine_centers">مراكز الحجر الصحي</a></li>
+          <li><a href="#Health_centers">المراكز الصحية</a></li>
+          <li><a href="#services">أسئلة شائعة</a></li>
+          <li class="menu-active"><a href="#intro">الصفحة الرئيسية</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/7.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>ما هو فيروس كورونا؟</h2>
+                <p>فيروسات كورونا هي سلالة واسعة من الفيروسات التي قد تسبب المرض للحيوان والإنسان. ومن المعروف أن عدداً من فيروسات كورونا تسبب لدى البشر أمراض تنفسية تتراوح حدتها من نزلات البرد الشائعة إلى الأمراض الأشد وخامة مثل متلازمة الشرق الأوسط التنفسية (ميرس) والمتلازمة التنفسية الحادة الوخيمة (سارس). ويسبب فيروس كورونا المُكتشف مؤخراً مرض كوفيد-19.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/3.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>ما هو مرض كوفيد-19؟</h2>
+                <p>مرض كوفيد-19 هو مرض معد يسببه آخر فيروس تم اكتشافه من سلالة فيروسات كورونا. ولم يكن هناك أي علم بوجود هذا الفيروس الجديد ومرضه قبل بدء تفشيه في مدينة ووهان الصينية في كانون الأول/ ديسمبر 2019. وقد تحوّل كوفيد-19 الآن إلى جائحة تؤثر على العديد من بلدان العالم.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/4.png" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>هل يبقى فيروس كورونا إلى الأبد؟</h2>
+                <p>قال علماء صينيون إن كورونا المستجد لن يتم القضاء عليه، ما يزيد من إجماع متزايد حول العالم بأن المرض الذي يسببه الفيروس سيعود على الأرجح على شكل موجات موسمية مثل الإنفلونزا.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!--==========================
+      Prevention and treatment methods Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <header class="section-header">
+          <h3>الأعراض وطرق الوقاية</h3>
+          <p>
+            تتمثل الأعراض الأكثر شيوعاً لمرض كوفيد-19 في ‏الحمى والإرهاق والسعال الجاف. وتشمل الأعراض ‏الأخرى الأقل شيوعاً ولكن قد يُصاب بها بعض ‏المرضى: الآلام والأوجاع، واحتقان الأنف، ‏والصداع، والتهاب الملتحمة، وألم الحلق، والإسهال، ‏وفقدان حاسة الذوق أو الشم، وظهور طفح جلدي ‏أو تغير لون أصابع اليدين أو القدمين. وعادة ما ‏تكون هذه الأعراض خفيفة وتبدأ بشكل تدريجي. ‏ويصاب بعض الناس بالعدوى دون أن يشعروا إلا ‏بأعراض خفيفة جداً. 
+            ‏
+            ويتعافى معظم الناس (نحو 80%) من المرض دون ‏الحاجة إلى علاج خاص. ولكن الأعراض تشتد ‏لدى شخص واحد تقريباً من بين كل 5 أشخاص ‏مصابين بمرض كوفيد-19 فيعاني من صعوبة في ‏التنفس. وتزداد مخاطر الإصابة بمضاعفات وخيمة ‏بين المسنين والأشخاص المصابين بمشاكل صحية ‏أخرى مثل ارتفاع ضغط الدم أو أمراض القلب والرئة ‏أو السكري أو السرطان. وينبغي لجميع الأشخاص، ‏أيا كانت أعمارهم، التماس العناية الطبية فوراً إذا ‏أصيبوا بالحمى و/أو السعال المصحوبين بصعوبة في ‏التنفس/ضيق النفس وألم أو ضغط في الصدر أو ‏فقدان القدرة على النطق أو الحركة. ويوصى، قدر ‏الإمكان، بالاتصال بالطبيب أو بمرفق الرعاية ‏الصحية مسبقاً، ليتسنى توجيه المريض إلى العيادة ‏المناسبة.  
+          </p>
+        </header>
+        <div class="row about-cols">
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/1.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/2.png" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="img/5.jfif" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+        <header class="section-header wow fadeInUp">
+          <h3>أسئلة شائعة</h3>
+          <p>تواصل منظمة الصحة العالمية رصد هذه الفاشية والاستجابة لها باستمرار. وسيتمّ تحديث هذه الأسئلة والأجوبة كلما توفر المزيد من المعارف عن مرض كوفيد-19 وكيف ينتشر وكيف يؤثر على الناس حول العالم. </p>
+        </header>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <h4 class="title"><a href="#">ماذا أفعل إذا كنت مصاباً بأعراض كوفيد-19 ومتى ينبغي أن التمس الرعاية الطبية؟</a></h4>
+            <p class="description">إذا كانت أعراضك خفيفة، من قبيل الكحة البسيطة أو الحمى الطفيفة، فلا حاجة عموماً إلى طلب الرعاية الطبية. الزم المنزل واعزل نفسك وراقب أعراضك. واتبع الإرشادات الوطنية عن العزل الذاتي. التمس الرعاية الطبية على الفور إذا كنت تشعر بصعوبة في التنفس أو بألم/ضغط في الصدر. اتصل بالطبيب مسبقاً، إن أمكن، ليتسنى له إرشادك إلى المرفق الصحي المناسب.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <h4 class="title"><a href="#">كيف ينتشر مرض كوفيد-19؟</a></h4>
+            <p class="description">يمكن أن يلقط الأشخاص عدوى كوفيد-19 من أشخاص آخرين مصابين بالفيروس. وينتشر المرض بشكل أساسي من شخص إلى شخص عن طريق القُطيرات الصغيرة التي يفرزها الشخص المصاب بكوفيد-19 من أنفه أو فمه عندما يسعل أو يعطس أو يتكلم. وهذه القطيرات وزنها ثقيل نسبياً، فهي لا تنتقل إلى مكان بعيد وإنما تسقط سريعاً على الأرض. ويمكن أن يلقط الأشخاص مرض كوفيد-19 إذا تنفسوا هذه القُطيرات من شخص مصاب بعدوى الفيروس.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
+            <h4 class="title"><a href="#">هل يمكن التقاط عدوى كوفيد-19 من شخص لا تظهر عليه أعراض المرض؟</a></h4>
+            <p class="description">تنتشر عدوى كوفيد-19 أساساً عن طريق القطيرات التنفسية التي يفرزها شخص يسعل أو لديه أعراض أخرى مثل الحمى أو التعب. ولكن العديد من الأشخاص المصابين بعدوى كوفيد-19 لا تظهر عليهم سوى أعراض خفيفة جداً. وينطبق ذلك بشكل خاص في المراحل الأولى من المرض. ويمكن بالفعل التقاط العدوى من شخص يعاني من سعال خفيف ولا يشعر بالمرض.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <h4 class="title"><a href="#">كيف يمكن لنا حماية الآخرين وحماية أنفسنا من العدوى إذا لم نكن نعلم من مصاب بها؟</a></h4>
+            <p class="description">إن الحرص على ممارسة نظافة اليدين والجهاز التنفسي مهمة في جميع الأوقات وهي أفضل طريقة لحماية نفسك والآخرين.
+            حافظ على مسافة متر واحد على الأقل (3 أقدام) بينك وبين الآخرين عند الإمكان. وهي مسألة مهمة بشكل خاص إذا كنت تقف قرب شخص يسعل أو يعطس. وبما أن بعض الأشخاص المصابين بالعدوى قد لا تظهر عليهم الأعراض بعد أو لديهم أعراض خفيفة فقط، فإن الحفاظ على مسافة متباعدة عن الجميع هو فكرة جيدة إذا كنت في منطقة يسري فيها مرض كوفيد-19.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <h4 class="title"><a href="#">ما الذي يعنيه العزل الذاتي؟</a></h4>
+            <p class="description">العزل الذاتي إجراء مهم يطبقه الأشخاص الذين تظهر عليهم أعراض كوفيد-19 لتجنب نقل العدوى للآخرين في المجتمع، بمن في ذلك أفراد عائلتهم.
+              والمقصود بالعزل الذاتي هو عندما يلزم الشخص المصاب بالحمى أو السعال أو غير ذلك من أعراض مرض كوفيد-19، بيته ويمتنع عن الذهاب إلى العمل أو المدرسة أو الأماكن العامة. </p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <h4 class="title"><a href="#">ما هو الفرق بين العزل الذاتي والحجر الصحي الذاتي والتباعد الجسدي؟</a></h4>
+            <p class="description">الحجر الصحي يعني تقييد الأنشطة وعزل الأشخاص غير المرضى هم أنفسهم ولكنهم ربما تعرّضوا للإصابة بعدوى كوفيد-19. والهدف هو منع انتشار المرض في الوقت الذي لا تكاد تظهر أي أعراض على الشخص.
+              أما العزل فيعني عزل الأشخاص المرضى الذين تظهر عليهم أعراض كوفيد-19 ويمكنهم نقل عدواه، لمنع انتشار المرض.
+              ويعني التباعد الجسدي الابتعاد عن الآخرين جسدياً. وتوصي المنظمة بالابتعاد عن الآخرين مسافة متر واحد (3 أقدام) على الأقل. وهي توصية عامة يتعين على الجميع تطبيقها حتى لو كانوا بصحة جيدة ولم يتعرضوا لعدوى كوفيد-19.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+   
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts"  class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>أرقام ومستجدات</h3>
+          <p>عدد كل من حالات الإصابة والشفاء والوفيات في سورية حسب منظمة الصحة العالمية</p>
+        </header>
+        <div class="row counters" style="padding-right: 22%;padding-bottom: 2%;">
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">170</span>
+            <p>الحالات المؤكدة</p>
+  				</div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">71</span>
+            <p>حالات الشفاء</p>
+  				</div>
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">6</span>
+            <p>الوفيات</p>
+  				</div>
+  			</div>
+      </div>
+    </section>
+
+    <!--==========================
+      Health centers Section
+    ============================-->
+    <section id="Health_centers"  class="section-bg" >
+      <div class="container" style="padding-top: 2%;">
+        <div class="section-header wow fadeInUp">
+          <h3>المراكز الصحية</h3>
+          <p style="margin:2%;">أماكن المراكز الصحية في سورية</p>
+        </div>
+        <div id="map1" style="width: 100%; height: 400px;" class="wow fadeInUp"></div>
+      </div>
+    </section>
+
+    <!--==========================
+      Quarantine centers Section
+    ============================-->
+    <section id="Quarantine_centers">
+      <div class="container" style="padding-top: 2%; padding-bottom: 2%;">
+        <div class="section-header wow fadeInUp">
+          <h3>مراكز الحجر الصحي</h3>
+          <p style="margin:2%;">أماكن الحجر الصحي في سورية</p>
+        </div>
+       <div id="map2" style="width: 100%; height: 400px;" class="wow fadeInUp"></div>
+      </div>
+    </section>
+
+    <!--==========================
+      Register a case Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+        <div class="section-header Color">
+          <h3 style="color:#fff;">تسجيل حالة</h3>
+          <p style="color:#fff;">يرجى تسجيل كافة المعلومات التفصيلية حول الحالة المشتبه بها ليتم تقييمها من قبل الأطباء وتحويلها إلى أقرب مركز صحي.</p>
+        </div>
+        <div class="form">
+          <div id="sendmessage" style="color:#fff;">تم إرسال طلبك بنجاح, شكرا لك.</div>
+          <div id="errormessage"></div>
+          <form action="" method="post" role="form" class="contactForm">
+
+            <div class="form-row" ><h4 style="color:#fff;">المعلومات الشخصية:</h4></div>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" id="name" placeholder="الاسم الكامل" data-rule="minlen:4" data-msg="الرجاء إدخال 4 محارف على الأقل" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="address" id="address" placeholder="العوان التفصيلي" data-rule="minlen:4" data-msg="الرجاء إدخال عنوان تفصيلي صحيح" />
+                <div class="validation"></div>
+              </div>
+            </div>   
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="mobile" class="form-control" id="mobile" placeholder="رقم الجوال" data-rule="minlen:10" data-msg="الرجاء إدخال رقم جوال صحيح" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="رقم الهاتف" data-rule="minlen:7" data-msg="الرجاء إدخال رقم هاتف صحيح" />
+                <div class="validation"></div>
+              </div>
+            </div>   
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="id" class="form-control" id="id" placeholder="رقم الهوية" data-rule="minlen:4" data-msg="الرجاء إدخال رقم هوية صحيح" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" class="form-control" name="watani_id" id="watani_id" placeholder="الرقم الوطني" data-rule="minlen:4" data-msg="الرجاء إدخال رقم وطني صحيح" />
+                <div class="validation"></div>
+              </div>
+            </div> 
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="email" class="form-control" name="email" id="email" placeholder="البريد الإلكتروني إن وجد" data-rule="email" data-msg="الرجاء إدخال بريد إلكتروني صحيح" />
+              </div>
+            </div>
+
+            <div class="form-row" style="padding-top:2%;" >
+              <div class="form-group col-md-2">
+                <h4 style="text-align:right; color: #fff;">أعراض الإصابة:</h4>
+              </div>
+              <div class="form-group col-md-4" style="text-align:right; color: #fff;">
+                <input type="checkbox" id="headache" name="headache" value="headache">
+                <label for="headache"> صداع</label><br>
+                <input type="checkbox" id="heat" name="heat" value="heat">
+                <label for="heat"> حرارة</label><br>
+                <input type="checkbox" id="cough" name="cough" value="cough">
+                <label for="cough"> سعال</label><br>      
+                <input type="checkbox" id="general" name="general" value="general">
+                <label for="general"> وهن عام</label><br> 
+              </div>   
+
+              <div class="form-group col-md-2">
+                <h4 style="text-align:right; color: #fff;">احتمالية نقل المرض:</h4>
+              </div>
+              <div class="form-group col-md-4" style="text-align:right; color: #fff;">
+                <input type="radio" id="abroad" name="status" value="abroad">
+                <label for="abroad"> كنت خارج البلد</label><br>
+                <input type="radio" id="insideYes" name="status" value="insideYes">
+                <label for="insideYes"> كنت داخل البد وخالطت أشخاص</label><br>    
+                <input type="radio" id="insideNo" name="status" value="insideNo">
+                <label for="insideNo"> كنت داخل البد ولم تخالط أشخاص</label><br>
+              </div>
+
+
+            </div>
+
+
+            <div class="text-center"> <input type="submit" name="submit" id="submit" class="form-submit" value="تسجيل الحالة"/></div>
+          
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+    <!--==========================
+      About Section
+    ============================-->
+   <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+        <h3>حول الموقع COVID-19-SYR </h3>
+        <p> هو موقع إلكتروني يساهم في الحد من انتشار
+          الفيروس. يقدم الموقع معلومات توعوية للمواطنين للحماية من انتقال العدوى، كما يتم نشر معلومات حول توزع المراكز الطبية
+          المتخصصة بإجراءات الفحوص الطبية ومراكز الحجر الصحي، وتتبع الحالات المشتبه بها من قبل الأطباء المختصين وتحويلها إلى
+          اقرب مركز صحي.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; <strong>COVID-19-SYR</strong> جميع الحقوق محفوظة
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Maps | leaflet -->
+  <script src="js/maps.js"></script>
+
+</body>
+</html>
